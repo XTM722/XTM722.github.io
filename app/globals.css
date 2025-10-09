@@ -126,4 +126,16 @@
   html {
     scroll-behavior: smooth;
   }
+
+  /* Add fade-out animation for trailing light effect */
+  @keyframes fade-out {
+    0% {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.3);
+    }
+  }
 }
